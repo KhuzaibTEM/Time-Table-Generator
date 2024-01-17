@@ -17,17 +17,16 @@ subjects = {
     11:"Further Mathematics",
     12:"Global Perspective",
     13:"History",
-    14:"World History",
-    15:"Information Technology",
-    16:"Law",
-    17:"Math",
-    18:"Media Studies",
-    19:"Physics",
-    20:"Psychology",
-    21:"Politics",
-    22:"Sociology",
-    23:"Thinking Skills",
-    24:"Urdu"
+    14:"Information Technology",
+    15:"Law",
+    16:"Math",
+    17:"Media Studies",
+    18:"Physics",
+    19:"Psychology",
+    20:"Politics",
+    21:"Sociology",
+    22:"Thinking Skills",
+    23:"Urdu"
 }
 
 with open("students (csv files)/student_names.csv", "r") as f:
@@ -48,10 +47,10 @@ with open("students (csv files)/student_names.csv", "r") as f:
             af.write(f"\n{student_name},")
 
             for i in range(amount_sub):
-                random_sub = random.randint(1, 24)
+                random_sub = random.randint(1, 23)
 
                 while subjects[random_sub] in students_subs[student_name]:
-                    random_sub = random.randint(1, 24)
+                    random_sub = random.randint(1, 23)
 
                 students_subs[student_name].append(subjects[random_sub])
                 
