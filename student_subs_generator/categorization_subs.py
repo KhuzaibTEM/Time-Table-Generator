@@ -14,7 +14,7 @@ class Categorize:
                 # Create classes with initial counts as zeros
                 categorized_subjects = {f"{subject} {chr(65 + i)}": 0 for i in range(num_classes)}
                 
-                # Distribute students evenly across classes yes exactly
+                # Distribute students evenly across classes
                 students_per_class = count // num_classes
                 remaining_students = count % num_classes
                 assigned_students = 0
